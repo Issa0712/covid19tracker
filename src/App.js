@@ -63,7 +63,7 @@ function App() {
 
   const onCountryChange = async (e) => {
       const selectedCountry = e.target.value
-      const url = selectedCountry === 'worldwide' ? 'https:disease.sh/v3/covid-19/all' : `https:disease.sh/v3/covid-19/countries/${selectedCountry}?strict=true`
+      const url = selectedCountry === 'worldwide' ? 'https://disease.sh/v3/covid-19/all' : `https://disease.sh/v3/covid-19/countries/${selectedCountry}?strict=true`
 
       await fetch(url)
       .then (response => response.json())
